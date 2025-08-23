@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Экран ввода кода -->
   <div class="glitch-input-wrapper">
     <div class="input-container">
       <input type="text" id="access-code" class="holo-input" placeholder="" required />
@@ -32,12 +33,36 @@
         <div class="corner corner-bl"></div>
         <div class="corner corner-br"></div>
       </div>
-      <div class="error-message" id="error-msg">⛔ Неверный код</div>
+    </div>
+    <!-- Сообщение об ошибке -->
+    <div class="error-message" id="error-msg">⛔ Неверный код</div>
+  </div>
+
+  <!-- Loader экран -->
+  <div id="loader-screen" class="hidden">
+    <div class="terminal-loader">
+      <div class="terminal-header">
+        <div class="terminal-title">Status</div>
+        <div class="terminal-controls">
+          <div class="control close"></div>
+          <div class="control minimize"></div>
+          <div class="control maximize"></div>
+        </div>
+      </div>
+      <div id="loader-text" class="terminal-text">Loading...</div>
     </div>
   </div>
 
+  <!-- Контент -->
   <div id="content" class="hidden">
-    <h1>Утилиты CyberVault (Новый SaveTools)</h1>
+    <button class="Btn" id="logoutBtn">
+      <div class="sign">
+        <svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg>
+      </div>
+      <div class="logout-text">Logout</div>
+    </button>
+
+    <h1>Утилиты CyberVault</h1>
     <div class="tool-grid">
       <div class="tool-card">
         <h3>Process Hacker</h3>
@@ -88,6 +113,16 @@
 		<h3>rarreg.key</h3>
 		<p>Файл для регистрации WinRAR (Закинуть файл нужно туда где находится WinRAR пример: C:\Program Files\WinRAR)</p>
 		<a href="https://pixelglimmer.github.io/CyberVault/Programms/rarreg.key" target="_blank">Скачать</a>
+	  </div>
+    <div class="tool-card">
+		<h3>zapret-discord-youtube</h3>
+		<p>Файл для регистрации WinRAR (Закинуть файл нужно туда где находится WinRAR пример: C:\Program Files\WinRAR)</p>
+		<a href="https://github.com/Flowseal/zapret-discord-youtube/releases" target="_blank">Скачать</a>
+	  </div>
+    <div class="tool-card">
+		<h3>python 3.13</h3>
+		<p>Python версии 3.13 (Поддерживает почти все библиотеки в том числе встроенную библиотеку tkinter для gui)</p>
+		<a href="https://www.python.org/ftp/python/3.13.5/python-3.13.5-amd64.exe" target="_blank">Скачать</a>
 	  </div>
     </div>
   </div>
